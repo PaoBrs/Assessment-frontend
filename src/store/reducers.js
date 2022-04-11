@@ -1,4 +1,4 @@
-import { SHOW_PRODUCTS, SHOW_PRODUCT } from "./type";
+import { SHOW_PRODUCTS, SHOW_PRODUCT, ERASE_PREVIOUS_PRODUCT } from "./type";
 
 const initialState = {
   products: [],
@@ -9,6 +9,10 @@ const initialState = {
     description: "...",
     price: "...",
     image: "...",
+    rating: {
+      rate: 0,
+      count: 0,
+    },
   },
 };
 
@@ -24,6 +28,11 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         product: action.payload,
+      };
+    case ERASE_PREVIOUS_PRODUCT:
+      return {
+        ...state,
+        product: initialState.product,
       };
     default:
       return state;
