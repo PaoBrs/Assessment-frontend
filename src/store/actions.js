@@ -1,4 +1,4 @@
-import { SHOW_PRODUCTS, SHOW_PRODUCT } from "./type";
+import { SHOW_PRODUCTS, SHOW_PRODUCT, ERASE_PREVIOUS_PRODUCT } from "./type";
 import { getProducts, getOneProduct } from "../services/products";
 
 export const showProducts = (products) => ({
@@ -6,7 +6,7 @@ export const showProducts = (products) => ({
   payload: products,
 });
 export const showProduct = (id) => ({ type: SHOW_PRODUCT, payload: id });
-
+export const erasePreviousProduct = () => ({ type: ERASE_PREVIOUS_PRODUCT });
 export const fetchProduct = () => async (dispatch) => {
   try {
     const products = await getProducts();
@@ -19,7 +19,7 @@ export const fetchProduct = () => async (dispatch) => {
 export const fetchOneProduct = (id) => async (dispatch) => {
   try {
     const product = await getOneProduct(id);
-    dispatch(getOneProduct(product));
+    dispatch(showProduct(product));
   } catch (error) {
     console.log(error);
   }
