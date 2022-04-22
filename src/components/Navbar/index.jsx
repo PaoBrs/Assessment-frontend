@@ -6,8 +6,8 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <nav>
-      <NavLink to={HOME_ROUTER}>Home</NavLink>
-      <NavLink to={ABOUT}>About</NavLink>
+      <NavLink className='nav_text' to={HOME_ROUTER}>Home</NavLink>
+      <NavLink className='nav_text' to={ABOUT}>About</NavLink>
     </nav>
   )
 }

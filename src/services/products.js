@@ -1,4 +1,4 @@
-const BASE_URL = "https://fakestoreapi.com/products";
+const BASE_URL = 'https://fakestoreapi.com/products';
 
 export async function getProducts() {
   const response = await fetch(`${BASE_URL}`);

@@ -1,12 +1,20 @@
 nav {
-  background-color: rgb(122, 121, 121);
-  height: 50px;
+  background-color: black;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   gap: 20px;
 }
-nav a {
+.nav_text {
   color: white;
   text-decoration: none;
+  font-size: 35px;
+  font-family: 'Sarina', cursive;
+  margin-right: 50px;
+}
+
+.nav_text:hover {
+  text-decoration: underline white;
+  padding-top: 10px;
 }
