@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 # Getting Started with Create React App
 
@@ -71,13 +69,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 # This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Assesment-Frontend
-
-proyect from makit real to createa a simple page
-
-> > > > > > > # b9b8e8d76af1d67c7846f0fef61f6bea3b555056
-
-# Assessment-frontend
-
-> > > > > > > 1252f19d9547daf1b3b16f9f4855bada62b43a0a
